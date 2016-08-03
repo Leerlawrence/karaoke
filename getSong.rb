@@ -3,7 +3,7 @@ require 'json'
 require "httparty"
 
 
-
+#Mike waz 'ere'
 def search(search_terms)
   search_string = search_terms.split(' ').join('+')
   response = HTTParty.get("http://tinysong.com/s/#{search_string}?format=json&key=API_KEY_OMITTED_FOR_REVIEW")
